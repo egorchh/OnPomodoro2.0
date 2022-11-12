@@ -6,12 +6,14 @@ import statisticSVG from '../../assets/svg/statistic.svg';
 import languageSVG from '../../assets/svg/language.svg';
 import optionsSVG from '../../assets/svg/settings.svg';
 
+import headerStyles from './Header.module.css'
+
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className={headerStyles.header}>
       <h1>OnPomodoro</h1>
       <nav>
-        <ul>
+        <ul className={headerStyles.list}>
           <li>
             <Link to="/statistic">
               <img src={statisticSVG} alt="Ваша статистика" />
